@@ -1,0 +1,14 @@
+<h2> My flats</h2>
+
+<% @flats.each do |flat| %>
+
+<div class="flats">
+  <%= link_to flat_path(flat["id"]) do %>
+    <div class="flat">
+      <h3> <%= flat['name'] %> </h3>
+      <img src="<%= flat['imageUrl'] %>" alt="" width="100%">
+      <p> <%= flat['price'] %> <span> <%= flat['priceCurrency'] %> </span> </p>
+    </div>
+  <% end %>
+<% end %>
+</div>

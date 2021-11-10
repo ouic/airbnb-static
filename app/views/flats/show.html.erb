@@ -1,0 +1,8 @@
+<div>
+  <h1> <%= @flat['name'] %> </h1>
+  <img src="<%= @flat['imageUrl'] %>" alt="" width="300" height="300">
+  <p> <%= @flat['price'] %> <span> <%= @flat['priceCurrency'] %> </span> </p>
+</div>
+
+
+<%= link_to "Back",  flats_path %>
